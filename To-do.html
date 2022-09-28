@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./To-do.css">
+</head>
+<body>
+  <div class="house">
+    <div class="input">
+      <input type="text" id="myText"  placeholder="write your to-do list"><button onclick="myFunction()">Add</button>
+    </div> <div class="list">
+      
+       <div id="mada" class="list-1">
+        <p> I will wake up at 8 in the morning
+          <span>
+            <button  onclick="clearData()">Trash</button>
+          </span>
+        </p>
+      </div>   
+       <div id="mad" class="list-2">
+        <p>I will practice html for 1 hours
+          <span>
+          <button  onclick="clearDota()">Trash</button>
+        </span>
+      </p>
+    </div>
+        <div id="ma" class="list-3">
+          <p>I will give time for 2 hours css
+            <span>
+            <button  onclick="clearDaTa()">Trash</button>
+          </span>
+        </p>
+      </div>
+        <div id="m" class="list-4">
+          <p>Then I will have breakfast
+            <span>
+            <button  onclick="clearDatA()">Trash</button>
+          </span>
+        </p>
+      
+      </div>
+        <div id="a" class="list-4">
+          <p id="wake">
+          <span id="sigh">
+            <button onclick="clearDAta()">Trash</button>
+          </span>
+          </p>
+        </div> 
+     </ul>
+    </div>
+
+  </div>
+  <p id="mark"></p>
+  <script>
+function clearData(){
+  var ready = document.getElementById('mada');
+  ready.innerHTML= ''; 
+}
+function clearDota(){
+  var ok = document.getElementById('mad');
+  ok.innerHTML= '';
+}
+function clearDaTa(){
+  var sigh = document.getElementById('ma');
+  sigh.innerHTML= '';
+}
+function clearDatA(){
+  var omo = document.getElementById('m');
+  omo.innerHTML= '';
+}
+function clearDAta(){
+  var om = document.getElementById('a');
+  om.innerHTML= '';
+}
+// let dem = document.create
+// let inside= "Demo";
+// const textNode= document.createTextNode(inside);
+// dem.appendChild(textNode);
+// var timi = document.getElementById("mark");
+// timi.appendChild(dem);
+// let mask = document.createElement("p");
+// let power = "";
+
+
+function myFunction(){
+
+  var marve= document.getElementById("myText").value;
+  document.getElementById("wake").innerHTML= marve
+}
+
+
+  </script>
+</body>
+</html>
